@@ -1,11 +1,132 @@
+* {
+   
+    
+}
+body {
+    background-image: url("images/pattern.webp") ;
+}
+a {
+    color: black;
+}
+.MI {
+    color: #CE2020 ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-stretch: expanded;
+    font-weight: 900;
+    font-size: 120%;
+    letter-spacing: .1rem; 
+ 
+}
+.HEALTH {
+    color: #8DC728 ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-stretch: expanded;
+    font-weight: 900;
+    font-size: 120%;
+    letter-spacing: .1rem; 
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-top: 1.6rem;
     overflow: hidden;
+    margin-right: 6rem;
   }
-
   li { 
     float: right;
-
+    margin-right: 3rem;
+    font-size: 120%;
   }
+h1 { 
+    font-size: 375%;
+    font-weight: 900;
+  }
+h2 { 
+    margin-inline: 3rem;
+}
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#E0E0E080;
+    height: auto;
+}
+.foodwhite { 
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    z-index: 100;
+}
+.foodred {
+    background-color: #8DC728 ;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    z-index: 100;
+    width: 50%;
+    text-align: right;
+}
+.foodierbox {
+    display: flex;
+    width: 16.5rem;
+    height: 25rem;
+    padding-right:1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+nav.box {
+   justify-content: space-between; 
+    width: 100%;
+    margin-right: 3rem;
+    background-color: #ffffff80;
+}
+.textbox { 
+
+    width: 35%;
+}
+
+ .foodbox {  
+    display: flex;
+    height: auto;
+    justify-content: space-evenly;
+} 
+
+.food { 
+    width: 16.5rem;
+    height: 25rem;
+    position: absolute;
+    object-fit: cover;
+    z-index: 5;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    div.box {
+        flex-direction: column;
+    }
+    .foodbox {  flex-direction: column;
+       margin-right: 0; 
+    } 
+    .food {
+        width: 90%;
+        height: 20rem;
+        margin: 0.5rem;
+        margin-left: 1.5rem;
+    }
+    li { 
+        float: right;
+        margin-top: .1rem;
+        font-size: 120%;
+      }
+      ul {
+        padding-top: 1rem;
+       text-align: center;
+      }
+      nav.box {
+        justify-content: space-between; 
+         width: 120%;
+         margin-right: 3rem;
+         background-color: white;}
+}

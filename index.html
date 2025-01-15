@@ -6,26 +6,46 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <h2>MIHEALTH</h2>
-    <nav> 
+    <nav class="box"> 
+        <h2><span class="MI">MI</span><span class="HEALTH">HEALTH</span></h2>
         <ul> 
-            <li> Breakfast </li>
-            <li> Lunch </li>
-            <li> Dinner </li>
-            <li> Dessert </li>
+           <a href="#"> <li> Dessert </li> </a>
+           <a href="#"> <li> Breakfast </li></a>
+           <a href="#"> <li> Lunch </li></a>
+           <a href="#"> <li> Dinner </li></a>
         </ul>
     </nav>
-        <div id="textbox">
-            <div>
-            <h1> Be Healthy </h1> 
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor posuere lectus vitae fermentum. Vestibulum vulputate mattis cursus. Nunc pretium lectus nec vestibulum feugiat. Nullam molestie tellus aliquam sagittis rutrum. Nulla et ultrices nisi. Donec in blandit ipsum. Curabitur ullamcorper massa metus, ac vehicula nulla rutrum nec. </p>
-            <p> Browse Menu → </p>
+        <div class="box">
+            <div class="textbox">
+                <h1> Be <br> Healthy </br> </h1> 
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor posuere lectus vitae fermentum. Vestibulum vulputate mattis cursus. Nunc pretium lectus nec vestibulum feugiat. Nullam molestie tellus aliquam sagittis rutrum. Nulla et ultrices nisi. Donec in blandit ipsum. Curabitur ullamcorper massa metus, ac vehicula nulla rutrum nec. </p>
+                <h3> Browse Menu → </h3>
             </div>
-            <div id="foodbox">
-            <img class="food" src="images/apple-breakfast-quinoa-7.jpg">
-            <img class="food" src="images/pasta-salad-recipe-for-lunch.jpg">
-            <img class="food"src="images/shrimp.jpg">
-            </div>
+            <section class="foodbox">
+
+                <div class="foodierbox"> 
+                    <img class="food" src="images/apple-breakfast-quinoa-7.jpg">
+                        <div class="foodwhite">Fresh</div>
+                            <div class = "foodred">Breakfast</div>
+                    </div>
+                   
+                
+                <div class="foodierbox">
+                    <img class="food" src="images/pasta-salad-recipe-for-lunch.jpg">
+                        <div class="foodwhite"> Sweet </div>
+                        <div class = "foodred"> Lunch </div>
+                   
+                
+                
+                </div>
+                <div class="foodierbox">
+                    <img class="food" src="images/shrimp.jpg">
+                       <div class="foodwhite">Delicious </div>
+                       <div class = "foodred">Dinner </div>
+                    </div>
+                  
+            </section>
         </div>
 </body>
 </html>
+
